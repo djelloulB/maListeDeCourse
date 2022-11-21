@@ -12,12 +12,16 @@ btn.addEventListener('click', afficherListe);
 
 function afficherListe(){
     let entry = input.value;
-    arrList.push(entry);
+    addItem(entry);
     
     let li = document.createElement('li');
     ul.appendChild(li);
     li.textContent = entry;
 }
+
+function addItem(item){
+    arrList.push(item);
+};
     // for( let i = 0; i < arrList.length; i++){
     //     console.log(arrList[i]);
     // }
